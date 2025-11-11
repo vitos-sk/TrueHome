@@ -57,7 +57,7 @@ const ContactContainer = ({ className }) => {
     <div className={className}>
       {/* Переключатель языка */}
       <button className="language-toggle" onClick={toggleLanguage}>
-        {language === "ru" ? "🇪🇸 ES" : "🇷🇺 RU"}
+        {language === "ru" ? "🌍 ES" : "🌍 UA"}
       </button>
 
       <div className="contact-wrapper">

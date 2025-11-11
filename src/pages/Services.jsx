@@ -117,7 +117,7 @@ const ServicesContainer = ({ className }) => {
     <section className={className}>
       {/* Переключатель языка */}
       <button className="language-toggle" onClick={toggleLanguage}>
-        {language === "ru" ? "🇪🇸 ES" : "🇷🇺 RU"}
+        {language === "ru" ? "🌍 ES" : "🌍 UA"}
       </button>
       <div className="services-header">
         <h1>{language === "ru" ? "Услуги" : "Servicios"}</h1>
@@ -292,7 +292,7 @@ export const Services = styled(ServicesContainer)`
     box-shadow: 0 6px 30px rgba(253, 185, 19, 0.4);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     .services-header h1 {
       font-size: 2.2rem;
     }
@@ -304,6 +304,11 @@ export const Services = styled(ServicesContainer)`
     }
     .cta-block {
       margin-top: 60px;
+    }
+    .language-toggle {
+      bottom: 20px;
+      right: 10px;
+      padding: 10px 5px;
     }
   }
 `;

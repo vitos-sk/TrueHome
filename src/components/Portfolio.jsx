@@ -7,7 +7,7 @@ const PortfolioContainer = ({ className }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [showAllWorks, setShowAllWorks] = useState(false);
 
-  const works = Array.from({ length: 28 }, (_, i) => ({
+  const works = Array.from({ length: 33 }, (_, i) => ({
     title: language === "ru" ? `Работа ${i + 1}` : `Trabajo ${i + 1}`,
     image: `/our-works/${i + 1}.jpg`,
   }));

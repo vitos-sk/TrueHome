@@ -101,7 +101,6 @@ const translations = {
     ctaSubtitle: "Llamada gratuita para cita y consulta online",
   },
 };
-// Словарь переводов
 
 const MainContainer = ({ className }) => {
   const navigate = useNavigate();
@@ -114,7 +113,7 @@ const MainContainer = ({ className }) => {
       <div className={className}>
         {/* Language Toggle Button */}
         <button className="language-toggle" onClick={toggleLanguage}>
-          {language === "ru" ? "🇪🇸 ES" : "🇷🇺 RU"}
+          {language === "ru" ? "🌍 ES" : "🌍 UA"}
         </button>
 
         {/* Hero Section */}
