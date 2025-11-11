@@ -10,7 +10,7 @@ export const LanguageProvider = ({ children }) => {
   // загрузка сохранённого языка при монтировании
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("app_language");
+      const saved = localStorage.getItem("language");
       if (saved) setLanguage(saved);
     } catch (e) {
       // ignore
@@ -20,7 +20,7 @@ export const LanguageProvider = ({ children }) => {
   // сохраняем в localStorage при изменении
   useEffect(() => {
     try {
-      localStorage.setItem("app_language", language);
+      localStorage.setItem("language", language);
     } catch (e) {}
   }, [language]);
 
@@ -36,8 +36,4 @@ export const LanguageProvider = ({ children }) => {
   );
 };
 
-export const useLanguage = () => {
-  const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLanguage must be used inside LanguageProvider");
-  return ctx;
-};
+export const useLanguage = () => useContext(LanguageContext);

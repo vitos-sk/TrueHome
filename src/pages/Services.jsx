@@ -117,8 +117,9 @@ const ServicesContainer = ({ className }) => {
     <section className={className}>
       {/* Переключатель языка */}
       <button className="language-toggle" onClick={toggleLanguage}>
-        {language === "ru" ? "🌍 ES" : "🌍 UA"}
+        {language === "ru" ? "🌍 ES" : "🌍 RU"}
       </button>
+
       <div className="services-header">
         <h1>{language === "ru" ? "Услуги" : "Servicios"}</h1>
         <h2>
@@ -161,7 +162,7 @@ const ServicesContainer = ({ className }) => {
 };
 
 export const Services = styled(ServicesContainer)`
-  /* Твой стиль Services.jsx 그대로 */
+  /* Твой стиль Services.jsx   */
   padding: 100px 20px;
   max-width: 1200px;
   margin: 0 auto;

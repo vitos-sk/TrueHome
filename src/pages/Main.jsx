@@ -113,7 +113,7 @@ const MainContainer = ({ className }) => {
       <div className={className}>
         {/* Language Toggle Button */}
         <button className="language-toggle" onClick={toggleLanguage}>
-          {language === "ru" ? "🌍 ES" : "🌍 UA"}
+          {language === "ru" ? "🌍 ES" : "🌍 RU"}
         </button>
 
         {/* Hero Section */}
